@@ -30,3 +30,4 @@
 # Binary folders
 bin
 .DS_Store
+obj
