@@ -59,31 +59,3 @@ void menu(){
 		<< endl
 		<< endl << "Por favor seleccione una opcion: ";
 }
-
-void trig(){
-	cout
-		<< endl << "Problema 1: Dada una altura y angulo (en grados), halle la "
-				<< "longitud de las escaleras"
-		<< endl << endl;
-
-	double	height = 0
-	,		angle = 0;
-
-	do{
-		cout << "Por favor ingrese la altura (en metros): ";
-		cin >> height;
-	} while(height <= 0);
-
-	do{
-		cout << "Por favor ingrese el angulo (en grados): ";
-		cin >> angle;
-	} while(angle <= 0);
-
-	double length = stairsLength(height, angle);
-
-	cout
-		<< endl << "La longitud de la escalera es de " << length << "m"
-		<< endl << endl;
-
-	pause();
-}
