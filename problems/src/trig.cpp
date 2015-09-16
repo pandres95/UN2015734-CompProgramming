@@ -29,10 +29,9 @@ void trig(){
 			cin >> angle;
 		} while(angle <= 0);
 
-		double length = stairsLength(height, angle);
-
 		cout
-			<< endl << "La longitud de la escalera es de " << length << "m."
+			<< endl << "La longitud de la escalera es de "
+                    << stairsLength(height, angle) << "m."
 			<< endl << endl
 			<< endl;
 	}
@@ -56,7 +55,8 @@ void trig(){
 					<< circleArea(radius) << "cm "
 					<< "y el perimetro es de "
 					<< circlePerimeter(radius) << "cm."
-			<< endl << endl;
+			<< endl << endl
+			<< endl;
 	}
 
 	// Problem #3
@@ -84,7 +84,8 @@ void trig(){
 					<< triangleOpposite(hypotenuse, angle) << "cm, "
 					<< "y el lado adyacente es de "
 					<< triangleAdjacent(hypotenuse, angle) << "cm."
-			<< endl << endl;
+			<< endl << endl
+			<< endl;
 
 	}
 
