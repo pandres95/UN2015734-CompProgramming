@@ -1,5 +1,7 @@
 #include <project.h>
 
+using namespace std;
+
 double rad(double angle){
     return angle * (PI / 180.0);
 }

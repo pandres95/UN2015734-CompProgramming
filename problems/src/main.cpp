@@ -19,6 +19,9 @@ int main(int argc, char** argv) {
 			case 1:
 				trig();
 				break;
+			case 2:
+				phys();
+				break;
 			default:
 				cout
 				 	<< endl
