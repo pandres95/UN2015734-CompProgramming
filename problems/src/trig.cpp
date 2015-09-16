@@ -16,3 +16,11 @@ double circleArea(double radius){
 double circlePerimeter(double radius){
     return 2 * PI * radius;
 }
+
+double triangleOpposite(double hypotenuse, double angle){
+    return hypotenuse * sin(rad(angle));
+}
+
+double triangleAdjacent(double hypotenuse, double angle){
+    return hypotenuse * cos(rad(angle));
+}
