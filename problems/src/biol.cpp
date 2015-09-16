@@ -24,8 +24,16 @@ void biol(){
                     << "de especies."
 			<< endl << endl;
 
+        double fTime = fuseTime();
+
+        int fuseSecs = ceil((fTime - ((int)fTime)) * 60)
+        ,   fuseMins = (int)fTime % 60
+        ,   fuseHour = (int)fTime / 60;
+
+
 		cout
-			<< endl << "El tiempo necesario es de " << fuseTime() << " minutos."
+			<< endl << "El tiempo necesario es de " << fuseHour << " horas, "
+                    << fuseMins << " minutos y " << fuseSecs << " segundos."
 			<< endl << endl
 			<< endl;
 	}
@@ -36,5 +44,5 @@ double celsius(double fahrenheit){
 }
 
 double fuseTime(){
-    return 20 * log(2, 1000000);
+    return 20 * log2(1000000);
 }

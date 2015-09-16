@@ -25,6 +25,9 @@ int main(int argc, char** argv) {
 			case 3:
 				chem();
 				break;
+			case 4:
+				biol();
+				break;
 			default:
 				cout
 				 	<< endl
