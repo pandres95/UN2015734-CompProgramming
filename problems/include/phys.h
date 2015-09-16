@@ -3,5 +3,6 @@
 
 double speed(double distance, double time);
 double earthDiameter();
+double km(double);
 
 #endif
