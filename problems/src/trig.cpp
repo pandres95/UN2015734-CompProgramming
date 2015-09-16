@@ -5,5 +5,6 @@ double rad(double angle){
 }
 
 double stairsLenght(double height, double angle){
-    return 0;
+    double distance = height / sin(rad(angle));
+    return sqrt(pow(distance) - pow(height));
 }
