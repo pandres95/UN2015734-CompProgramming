@@ -22,12 +22,16 @@ int main(int argc, char** argv) {
 			case 2:
 				phys();
 				break;
+			case 3:
+				chem();
+				break;
 			default:
 				cout
 				 	<< endl
 					<< "Por favor seleccione una opción correcta"
 					<< endl;
 		}
+		pause();
 	} while(option != 0);
 
 	return 0;

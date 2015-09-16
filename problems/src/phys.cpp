@@ -8,7 +8,7 @@ void phys(){
 	{
 		cout
 			<< endl << "Problema 1: Calcule la velocidad dadas la distancia "
-                    << "(en metros), y el tiempo (en segundos)"
+                    << "(en metros), y el tiempo (en segundos)."
 			<< endl << endl;
 
 		double	distance = 0
@@ -30,6 +30,21 @@ void phys(){
 			<< endl;
 	}
 
+    // Problem #2
+	{
+		cout
+			<< endl << "Problema 2: La luz tiene una velocidad de 3*10^8m/s "
+                    << "y puede rodear a la tierra 7.5 veces por segundo. "
+                    << "Calcule el diametro de la tierra."
+			<< endl << endl;
+
+		cout
+			<< endl << "El diametro de la tierra es, aproximadamente, de "
+                    << earthDiameter() << "km."
+			<< endl << endl
+			<< endl;
+	}
+
 }
 
 double speed(double distance, double time){
@@ -37,7 +52,11 @@ double speed(double distance, double time){
 }
 
 double earthDiameter(){
-    double  lightSpeed      = 3 * pow(10, 8); // m/s
-    ,       roundFrequency  = 7.5; // s^-1
-    return lightSpeed * roundFrequency;
+    double  lightSpeed  = 3 * pow(10, 8) // m/s
+    ,       roundTime   = 1 / 7.5; // s
+    return km(sqrt(4 * (lightSpeed * roundTime)/ PI));
+}
+
+double km(double mi){
+    return mi * 1.609344;
 }

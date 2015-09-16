@@ -89,7 +89,6 @@ void trig(){
 
 	}
 
-	pause();
 }
 
 
