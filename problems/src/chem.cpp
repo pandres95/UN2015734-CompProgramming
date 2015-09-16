@@ -1,5 +1,7 @@
 #include <project.h>
 
+using namespace std;
+
 void chem(){
 
     // Problem #1
