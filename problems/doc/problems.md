@@ -35,6 +35,6 @@ _Resolution file: biol.cpp_
 # 5. Geometry
 _Resolution file: geom.cpp_
 
-* For a circle of given radius, in meters, determine the circumference at angle in degrees.
+* For a circle of given radius, in meters, determine the circumference at given angle in degrees.
 * Find the height of a equilateral triangle, if its perimeter it's 27 cm
 * Find the volume of a triangular pyramid
