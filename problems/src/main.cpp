@@ -28,6 +28,9 @@ int main(int argc, char** argv) {
 			case 4:
 				biol();
 				break;
+			case 5:
+				geom();
+				break;
 			default:
 				cout
 				 	<< endl
