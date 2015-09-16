@@ -1,6 +1,6 @@
 #include <project.h>
 
-double degToRad(double deg){
+double rad(double angle){
     return deg * (PI / 180.0);
 }
 
