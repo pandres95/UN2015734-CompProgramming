@@ -4,8 +4,8 @@
 CPP      = g++
 CC       = gcc
 OBJ      = obj/main.o obj/trig.o obj/phys.o obj/geom.o obj/chem.o obj/biol.o
-LINKOBJ  = obj/main.o obj/trig.o obj/phys.o obj/geom.o obj/chem.o obj/biol.o
-LIBS     = 
+LINKOBJ  = obj/trig.o obj/phys.o obj/chem.o obj/biol.o obj/geom.o obj/main.o
+LIBS     =
 INCS     = -I"include"
 CXXINCS  = -I"include"
 BIN      = bin/problems
