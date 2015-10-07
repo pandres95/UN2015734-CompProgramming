@@ -3,20 +3,22 @@
 
 using namespace std;
 
+int factorial(int n){
+    return n > 0 ? n * factorial(n - 1) : 1;
+}
+
 int y(int x){
     int y;
     if(x >= 0){
-        y = 0;
-        for(int i = 0; i < x; i++){
-            y += i;
-        }
+        return (x * (x - 1) / 2) - x;
     } else {
-        y = 1;
-        for(int i = x; i < 0; i++){
-            y *= i;
+        if(x % 2 == 0){
+            return factorial(x);
+        } else {
+            return -1 * factorial(x);
         }
     }
-    return y;
+    return 0;
 }
 
 int c(int a, int b) {
