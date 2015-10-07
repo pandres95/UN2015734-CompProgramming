@@ -3,10 +3,23 @@
 
 using namespace std;
 
+// n!
 int factorial(int n){
     return n > 0 ? n * factorial(n - 1) : 1;
 }
 
+// Sum of numbers in [a, b]
+int r(int i, int n){
+    int y = 0;
+    while(i <= n){
+        y += (i * i++);
+    }
+    return y;
+}
+
+//          sum(i)_x=0^n-1 , n >= 0
+// y(n) = {
+//          mult(i)_x=n^-1 , n < 0
 int y(int x){
     int y;
     if(x >= 0){
@@ -20,6 +33,7 @@ int y(int x){
     }
     return 0;
 }
+
 
 int c(int a, int b) {
     if(a >= 0) {
@@ -38,7 +52,7 @@ int main() {
     int a, b;
 
     while(cin >> a >> b){
-        cout << c(a, b) << ", " << y(a) << endl;
+        cout << c(a, b) << ", " << y(a) << ", " << r(a, b) << endl;
     }
 
     return 0;
