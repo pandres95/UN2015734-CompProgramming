@@ -21,7 +21,6 @@ int r(int i, int n){
 // y(n) = {
 //          mult(i)_x=n^-1 , n < 0
 int y(int x){
-    int y;
     if(x >= 0){
         return (x * (x - 1) / 2) - x;
     } else {
@@ -51,7 +50,8 @@ int main() {
 
     int a, b;
 
-    while(cin >> a >> b){
+    while(cin >> a){
+        cin >> b;
         cout << c(a, b) << ", " << y(a) << ", " << r(a, b) << endl;
     }
 
